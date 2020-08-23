@@ -1,0 +1,2 @@
+1.if i entere the phone number and add Add to cart button in Order Form then it will show error//pending Status
+2.validation proper floor combobox and phone number textbox and table combobox//pending status

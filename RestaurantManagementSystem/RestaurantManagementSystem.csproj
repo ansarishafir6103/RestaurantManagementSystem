@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E28A31B2-CB2E-4985-BB08-23DF79AAEEA5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RestaurantManagementSystem</RootNamespace>
+    <AssemblyName>RestaurantManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1C68F7FB2CB17E11427B7700A2F443F4D6F28923</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>RestaurantManagementSystem_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.10.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.Common.10.0.40219.1\lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.10.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.10.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportViewer.WinForms.10.0.40219.1\lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleReports, Version=1.0.0.8, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleReports.1.0.0.8\lib\net45\SimpleReports.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPanel\frmFoodCategories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\frmFoodCategories.Designer.cs">
+      <DependentUpon>frmFoodCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\frmFoodMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\frmFoodMenu.Designer.cs">
+      <DependentUpon>frmFoodMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\frmFloors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\frmFloors.Designer.cs">
+      <DependentUpon>frmFloors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\frmOdrers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\frmOdrers.Designer.cs">
+      <DependentUpon>frmOdrers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\frmOrderComplition.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\frmOrderComplition.Designer.cs">
+      <DependentUpon>frmOrderComplition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\frmOrderModification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\frmOrderModification.Designer.cs">
+      <DependentUpon>frmOrderModification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\frmTables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\frmTables.Designer.cs">
+      <DependentUpon>frmTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\frmAdminWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\frmAdminWindow.Designer.cs">
+      <DependentUpon>frmAdminWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\frmCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\frmCustomers.Designer.cs">
+      <DependentUpon>frmCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\frmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\frmUsers.Designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\frmRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\frmRoles.Designer.cs">
+      <DependentUpon>frmRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel\frmTex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel\frmTex.Designer.cs">
+      <DependentUpon>frmTex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChefPanel\frmHomeChef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChefPanel\frmHomeChef.Designer.cs">
+      <DependentUpon>frmHomeChef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChefPanel\frmOrderChef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChefPanel\frmOrderChef.Designer.cs">
+      <DependentUpon>frmOrderChef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Customers.cs" />
+    <Compile Include="Class\Floors.cs" />
+    <Compile Include="Class\FoodCategories.cs" />
+    <Compile Include="Class\FoodMenu.cs" />
+    <Compile Include="Class\OrderDetails.cs" />
+    <Compile Include="Class\Orders.cs" />
+    <Compile Include="Class\Roles.cs" />
+    <Compile Include="Class\Tables.cs" />
+    <Compile Include="Class\Tax.cs" />
+    <Compile Include="Class\Users.cs" />
+    <Compile Include="frmLoginScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoginScreen.Designer.cs">
+      <DependentUpon>frmLoginScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMDI.Designer.cs">
+      <DependentUpon>frmMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSample.Designer.cs">
+      <DependentUpon>frmSample.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSample2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSample2.Designer.cs">
+      <DependentUpon>frmSample2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportingTools\Classes\Reports.cs" />
+    <Compile Include="ReportingTools\RMSDataSet.cs">
+      <DependentUpon>RMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportingTools\RMSDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminPanel\frmAdminWindow.resx">
+      <DependentUpon>frmAdminWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel\frmCustomers.resx">
+      <DependentUpon>frmCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel\frmFoodCategories.resx">
+      <DependentUpon>frmFoodCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel\frmFoodMenu.resx">
+      <DependentUpon>frmFoodMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel\frmFloors.resx">
+      <DependentUpon>frmFloors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel\frmOdrers.resx">
+      <DependentUpon>frmOdrers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel\frmOrderComplition.resx">
+      <DependentUpon>frmOrderComplition.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel\frmOrderModification.resx">
+      <DependentUpon>frmOrderModification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel\frmRoles.resx">
+      <DependentUpon>frmRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel\frmTables.resx">
+      <DependentUpon>frmTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel\frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel\frmTex.resx">
+      <DependentUpon>frmTex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChefPanel\frmHomeChef.resx">
+      <DependentUpon>frmHomeChef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChefPanel\frmOrderChef.resx">
+      <DependentUpon>frmOrderChef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoginScreen.resx">
+      <DependentUpon>frmLoginScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMDI.resx">
+      <DependentUpon>frmMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSample.resx">
+      <DependentUpon>frmSample.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSample2.resx">
+      <DependentUpon>frmSample2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportingTools\Reports\BillReport.rdlc" />
+    <Fakes Include="Fakes\AxShockwaveFlashObjects.fakes" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="ReportingTools\RMSDataSet.xsc">
+      <DependentUpon>RMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReportingTools\RMSDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RMSDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportingTools\RMSDataSet.xss">
+      <DependentUpon>RMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RestaurantManagementSystem_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\DSC_0504.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\roles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Users copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\roles copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\floors copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\tables copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\customer1 copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\foodCategoryNew copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\tablesNew copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\foodMenuNew1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\ordersNew copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
